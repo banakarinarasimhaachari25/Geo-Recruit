@@ -1,0 +1,11 @@
+{
+  "name": "Geo Recruit",
+  "description": "Comprehensive AI-powered interview preparation, live proctored mock interview, ATS resume analyzer, and recruitment intelligence platform.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

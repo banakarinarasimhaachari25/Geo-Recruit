@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" fill="none">
+  <defs>
+    <!-- Outer Ribbon "G" Gradient -->
+    <linearGradient id="grOuterGrad" x1="50" y1="20" x2="160" y2="175" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B3C9B" />
+      <stop offset="35%" stop-color="#0066FF" />
+      <stop offset="70%" stop-color="#00B4D8" />
+      <stop offset="100%" stop-color="#00D2D3" />
+    </linearGradient>
+
+    <!-- Outer Ribbon Return Wing -->
+    <linearGradient id="grReturnGrad" x1="65" y1="155" x2="175" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00D2D3" />
+      <stop offset="45%" stop-color="#0096C7" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+
+    <!-- Team Icons Gradient -->
+    <linearGradient id="grTeamGrad" x1="130" y1="45" x2="170" y2="75" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="60%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+
+    <!-- Center Pin Gradient -->
+    <linearGradient id="grPinGrad" x1="75" y1="55" x2="125" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F4C81" />
+      <stop offset="40%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#082846" />
+    </linearGradient>
+
+    <filter id="grGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00D2D3" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- EMBLEM GROUP (Scaled and Centered at X: 20..180, Y: 10..190) -->
+  <g transform="translate(10, 5) scale(0.48)">
+    <!-- Base Ground Glow / Shadow Ellipse -->
+    <ellipse cx="200" cy="338" rx="40" ry="8" fill="none" stroke="#00C4D8" stroke-width="6" stroke-dasharray="9 3" opacity="0.95" />
+    <ellipse cx="200" cy="338" rx="22" ry="4" fill="#00C4D8" opacity="0.4" />
+
+    <!-- Main Outer Ribbon "G" -->
+    <path d="M 235 48 C 150 45, 70 115, 62 205 C 54 290, 120 355, 202 355 C 255 355, 305 320, 332 272 L 302 248 C 280 290, 240 318, 196 318 C 142 318, 102 272, 106 210 C 110 148, 160 92, 230 92 C 260 92, 290 105, 312 126 L 344 98 C 314 70, 276 50, 235 48 Z" fill="url(#grOuterGrad)" />
+    <path d="M 205 285 C 240 285, 290 260, 320 220 L 358 220 C 340 270, 280 325, 205 325 C 165 325, 130 305, 110 275 L 138 250 C 152 272, 178 285, 205 285 Z" fill="url(#grReturnGrad)" />
+
+    <!-- Team Members Icons -->
+    <circle cx="304" cy="118" r="13" fill="url(#grTeamGrad)" />
+    <path d="M 286 150 C 286 138, 294 133, 304 133 C 314 133, 322 138, 322 150 Z" fill="url(#grTeamGrad)" />
+    <circle cx="276" cy="130" r="10" fill="url(#grTeamGrad)" />
+    <path d="M 262 154 C 262 144, 268 141, 276 141 C 284 141, 290 144, 290 154 Z" fill="url(#grTeamGrad)" />
+    <circle cx="332" cy="130" r="10" fill="url(#grTeamGrad)" />
+    <path d="M 318 154 C 318 144, 324 141, 332 141 C 340 141, 346 144, 346 154 Z" fill="url(#grTeamGrad)" />
+
+    <!-- Center Location Pin -->
+    <g filter="url(#grGlow)">
+      <path d="M 200 115 C 162 115, 138 146, 138 184 C 138 224, 185 280, 200 326 C 215 280, 262 224, 262 184 C 262 146, 238 115, 200 115 Z" fill="url(#grPinGrad)" />
+      <circle cx="200" cy="180" r="38" fill="#FFFFFF" />
+      <circle cx="200" cy="168" r="13.5" fill="#0A2540" />
+      <path d="M 178 206 C 180 190, 190 184, 200 184 C 210 184, 220 190, 222 206 Z" fill="#0A2540" />
+      <path d="M 197 184 L 203 184 L 201.5 197 L 200 203 L 198.5 197 Z" fill="#FFFFFF" />
+    </g>
+  </g>
+
+  <!-- WORDMARK: "Georecruit" -->
+  <g transform="translate(200, 115)">
+    <!-- "Ge" in Deep Navy -->
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="64" font-weight="800" fill="#082846" letter-spacing="-1">Ge</text>
+    
+    <!-- Stylized "o" (Location Pin with Cyan Core) -->
+    <g transform="translate(86, -54) scale(1.6)">
+      <path d="M 16 2 C 8.5 2, 3.5 7.8, 3.5 15.2 C 3.5 22.4, 12 28.5, 16 34.5 C 20 28.5, 28.5 22.4, 28.5 15.2 C 28.5 7.8, 23.5 2, 16 2 Z" fill="#082846" />
+      <circle cx="16" cy="15" r="5.5" fill="#00D2D3" />
+    </g>
+
+    <!-- "recruit" in Electric Blue -->
+    <text x="144" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="64" font-weight="800" fill="#0066FF" letter-spacing="-1">recruit</text>
+  </g>
+
+  <!-- TAGLINE: "Find • Hire • Grow" -->
+  <g transform="translate(202, 150)">
+    <text x="0" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="600" fill="#475569" letter-spacing="4">
+      FIND <tspan fill="#0066FF" font-weight="800">•</tspan> HIRE <tspan fill="#0066FF" font-weight="800">•</tspan> GROW
+    </text>
+  </g>
+</svg>
